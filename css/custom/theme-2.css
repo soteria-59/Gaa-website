@@ -81,3 +81,12 @@ i:before,span,.ui-menu .ui-menu-item-wrapper:hover,.news-section .single-item .n
 .footer-logo{
   background: url(../../images/footer/logo1.png) no-repeat 9% 100%;
 }
+
+/* Slider button and text spacing */
+.main-slider .tp-caption.Newspaper-Button {
+  margin-top: 15px;
+}
+
+.main-slider .tp-caption.Newspaper-Subtitle {
+  margin-bottom: 20px;
+}
