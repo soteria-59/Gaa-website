@@ -18,44 +18,22 @@
 <!-- page wrapper -->
 <body class="page-wrapper">   
 
-    <!--header search-->
-    <section class="header-search">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="search-form pull-right">
-                        <form action="inc/sendmail.php"><method>"post"</method>
-                            <div class="search">
-                                <input type="search" name="search" value="" placeholder="Search Something">
-                                <button type="submit"><span class="fa fa-search" aria-hidden="true"></span></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--end header search-->
-    
-    <!-- main header area -->
+<!-- main header area -->
     <header class="main-header">
 
         <!-- header upper -->
         <div class="header-upper">
             <div class="container">
                 <ul class="top-left">
-                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>Mon - Fri  9.00am - 5.00pm</li>
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i>Mon - Fri | 9:00am - 5:00pm EST</li>
                     <li><i class="fa fa-envelope"></i>admin@globaladvisorsandanalysts.com</li>
                 </ul>
                 <div class="top-right">
                     <ul class="social-top">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>                  
+                    <li><a href="https://www.linkedin.com/company/global-advisors-and-analysts " target="_blank"><i class="fa fa-linkedin"></i></a></li>                  
                     </ul>
                     <div class="button-top">
-                        <a href="admin@globaladvisorsandanalysts.com" class="btn-one style-one">Get Appoinment</a>
+                        <a href="admin@globaladvisorsandanalysts.com" class="btn-one style-one">Request a Consult</a>
                     </div>
                 </div>             
             </div>
@@ -180,7 +158,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-12 about-colmun">
                     <div class="about-content">
                         <div class="about-title">
-                            <div class="section-title"><h2>Our Approach at Think Tank</h2></div>
+                            <div class="section-title"><h2>Our Approach </h2></div>
                             <div class="title-text"></div>
                         </div>
                         <div class="text"><p>Our team of experts employs a multidisciplinary approach, 
@@ -212,12 +190,12 @@
                             <h2>Our <span>Aim</span></h2>
                         </div>   
                         <div class="text-r">
-                            <p>At ThinkGlobally, we aim to:</p>
+                            <p>We aim to work with clients and partners to increase capacity and competitiveness through:</p>
                             <ul class="list-1">
                                 <li>Research</li>
-                                <li>Inform</li>
-                                <li>Innovate</li>
-                                <li>Engage</li>
+                                <li>Thought Leadership</li>
+                                <li>Innovation</li>
+                                <li>Engagement</li>
                             </ul>
                         </div>              
                     </div>
@@ -234,7 +212,7 @@
                         </div>
                         <div class="single-item">
                             <div class="icon-box"><a href="service-details.html"><i class="flaticon-"></i></a></div>
-                            <h4><a href="service-details.html">Inform:</a></h4>
+                            <h4><a href="service-details.html">Thought Leadership:</a></h4>
                             <div class="text"><p>Disseminate our findings through publications, events,
                                  and media engagement to inform public discourse and policy-making.             
                              </p>
@@ -242,12 +220,12 @@
                         </div>
                         <div class="single-item">
                             <div class="icon-box"><a href="service-details.html"><i class="flaticon-"></i></a></div>
-                            <h4><a href="service-details.html">Innovate:</a></h4>
+                            <h4><a href="service-details.html">Innovation:</a></h4>
                             <div class="text"><p>Develop creative and practical solutions that address contemporary societal challenges.</p></div>
                         </div>
                         <div class="single-item">
                             <div class="icon-box"><a href="service-details.html"><i class="flaticon-"></i></a></div>
-                            <h4><a href="service-details.html">Engage: </a></h4>
+                            <h4><a href="service-details.html">Engagement: </a></h4>
                             <div class="text"><p> Collaborate with policymakers, industry leaders, and communities to drive impactful change.</p></div>
                         </div>
                     </div>
@@ -255,6 +233,239 @@
             </div>
         </div>
      </section>
+
+<!-- Recent Publications Section -->
+<style>
+    .publications-section {
+        padding: 70px 0 80px;
+        background: #f9f7f4;
+    }
+    .publications-section .sec-title {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .publications-section .sec-title h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #222;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 15px;
+    }
+    .publications-section .sec-title h2::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: #f6b129;
+    }
+    .publications-section .sec-title h2 span {
+        color: #f6b129;
+    }
+
+    .pub-scroll-wrapper {
+        position: relative;
+        overflow: hidden;
+    }
+    .pub-scroll-track {
+        display: flex;
+        gap: 25px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 10px 5px 25px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .pub-scroll-track::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pub-card {
+        min-width: 340px;
+        max-width: 340px;
+        background: #ffffff;
+        border: 1px solid #eae6e0;
+        border-radius: 6px;
+        padding: 30px 28px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        flex-shrink: 0;
+    }
+    .pub-card:hover {
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+        transform: translateY(-4px);
+    }
+
+    .pub-card .pub-year {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: #f6b129;
+        background: rgba(246, 177, 41, 0.1);
+        padding: 4px 12px;
+        border-radius: 3px;
+        margin-bottom: 16px;
+        letter-spacing: 0.5px;
+    }
+    .pub-card .pub-citation {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.75;
+        color: #555;
+        margin-bottom: 22px;
+        flex-grow: 1;
+    }
+    .pub-card .pub-citation em {
+        font-style: italic;
+    }
+
+    .pub-card .pub-read-more {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #fff;
+        background: #f6b129;
+        padding: 10px 24px;
+        border-radius: 3px;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.15s ease;
+        align-self: flex-start;
+    }
+    .pub-card .pub-read-more:hover {
+        background: #222;
+        color: #fff;
+        transform: scale(1.03);
+    }
+    .pub-card .pub-read-more i {
+        margin-left: 6px;
+        font-size: 12px;
+    }
+
+    /* Scroll step indicators */
+    .pub-scroll-nav {
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    .pub-scroll-nav .pub-nav-btn {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #555;
+        background: transparent;
+        border: 2px solid #ddd;
+        padding: 10px 22px;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        letter-spacing: 0.5px;
+    }
+    .pub-scroll-nav .pub-nav-btn:hover {
+        background: #f6b129;
+        border-color: #f6b129;
+        color: #fff;
+    }
+    .pub-scroll-nav .pub-nav-btn i {
+        font-size: 12px;
+    }
+    .pub-scroll-nav .pub-dots {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    .pub-scroll-nav .pub-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #ddd;
+        transition: background 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+    }
+    .pub-scroll-nav .pub-dot.active {
+        background: #f6b129;
+        transform: scale(1.25);
+    }
+
+    @media (max-width: 767px) {
+        .pub-card {
+            min-width: 280px;
+            max-width: 280px;
+        }
+    }
+</style>
+
+<section class="publications-section">
+    <div class="container">
+        <div class="sec-title">
+            <h2>Recent <span>Publications</span></h2>
+        </div>
+
+        <div class="pub-scroll-wrapper">
+            <div class="pub-scroll-track" id="pubTrack">
+
+                <!-- Publication 1 -->
+                <div class="pub-card">
+                    <span class="pub-year">2025</span>
+                    <p class="pub-citation">
+                        Whittaker JA, and Montgomery, BL (2025). Reimagining a Path from Institutional Willingness to Readiness: Ecosystem Variables that Promote or Impede Sustainable Transformation in Higher Education. <em>Front. Educ.</em>
+                    </p>
+                    <a href="https://doi.org/10.3389/feduc.2025.1571030" target="_blank" rel="noopener noreferrer" class="pub-read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Publication 2 -->
+                <div class="pub-card">
+                    <span class="pub-year">2022</span>
+                    <p class="pub-citation">
+                        Whittaker, JA, and Montgomery, BL (2022). Advancing a Cultural Change Agenda in Higher Education: Issues and Values Related to Reimagining Academic Leadership. <em>Discover Sustainability</em> 3, 10: pp 1-8.
+                    </p>
+                    <a href="https://doi.org/10.1007/s43621-022-00079-6" target="_blank" rel="noopener noreferrer" class="pub-read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Publication 3 -->
+                <div class="pub-card">
+                    <span class="pub-year">2022</span>
+                    <p class="pub-citation">
+                        Montgomery, B.L., and Whittaker, J.A. (2022). The Roots of Change: Cultivating Equity and Change Across Generations From Healthy Roots. <em>The Plant Cell</em>, koac121.
+                    </p>
+                    <a href="https://doi.org/10.1093/plcell/koac121" target="_blank" rel="noopener noreferrer" class="pub-read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Publication 4 -->
+                <div class="pub-card">
+                    <span class="pub-year">2021</span>
+                    <p class="pub-citation">
+                        Montgomery, BL, and Whittaker, J.A. (2021). Reimagining Academic Leadership. <em>ASBMB Today/Opinions</em> 070621: pp 1-12.
+                    </p>
+                    <a href="https://www.asbmb.org/asbmb-today/opinions" target="_blank" rel="noopener noreferrer" class="pub-read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navigation: prev dots next -->
+        <div class="pub-scroll-nav">
+            <button class="pub-nav-btn" id="pubPrev" aria-label="Previous"><i class="fa fa-angle-left"></i></button>
+            <div class="pub-dots" id="pubDots"></div>
+            <button class="pub-nav-btn" id="pubNext" aria-label="Next"><i class="fa fa-angle-right"></i></button>
+        </div>
+    </div>
+</section>
+<!-- Recent Publications Section End -->
 
  <!-- sponsors section -->
  <section class="sponsors-section">
@@ -264,6 +475,7 @@
     </div>
  </section>
  <!-- sponsors section end -->
+
 
 <!-- call-back-section -->
 <section class="call-back sec-pad">
@@ -296,7 +508,8 @@
                                             <option><b>Partnering with you on research projects and initiatives.</option>
                                             <option><b>Contributing to your work through donations or sponsorships.</option>
                                             <option><b>Attend events, workshops, and seminars to engage with latest research and findings.</option>
-                                        </select>
+                                            <option><b>Other                                                                                                                                            </option>
+                                            </select>
                                     </div>
                                 </div>
                             </div>
@@ -358,7 +571,7 @@
                         <li><a href="#">About Us </a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -376,7 +589,7 @@
                     </div>
                     <div class="social">
                         
-                        <div class="social"><p>Find us on <a href="index.html">  LinkedIn</a> </p></div>
+                        <div class="social"><p>Find us on <a href="https://www.linkedin.com/company/global-advisors-and-analysts">LinkedIn</a> </p></div>
                       </div>                                        
                                               
                 </div>
@@ -389,7 +602,7 @@
 <!-- footer bottom -->
     <section class="footer-bottom centered">
         <div class="container">
-            <div class="copyright"><p>© 2024<a href="index.html"> Global Advisors and Analysts, LLC.</a> All Right Reserved</p></div>
+            <div class="copyright"><p>© 2026<a href="index.html"> Global Advisors and Analysts, LLC.</a> All Rights Reserved</p></div>
         </div>
     </section>
 
@@ -414,6 +627,80 @@
 <script type="text/javascript" src="js/jQuery.style.switcher.min.js"></script>
 <script src="js/script.js"></script>
 
+<!-- Publications Scroll Navigation -->
+<script>
+(function() {
+    var track = document.getElementById('pubTrack');
+    var prevBtn = document.getElementById('pubPrev');
+    var nextBtn = document.getElementById('pubNext');
+    var dotsContainer = document.getElementById('pubDots');
+    if (!track || !prevBtn || !nextBtn || !dotsContainer) return;
+
+    var cards = track.querySelectorAll('.pub-card');
+    var currentIndex = 0;
+    var totalCards = cards.length;
+
+    // Build dots
+    for (var i = 0; i < totalCards; i++) {
+        var dot = document.createElement('span');
+        dot.className = 'pub-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('data-index', i);
+        dot.addEventListener('click', function() {
+            scrollToCard(parseInt(this.getAttribute('data-index')));
+        });
+        dotsContainer.appendChild(dot);
+    }
+
+    function updateDots() {
+        var dots = dotsContainer.querySelectorAll('.pub-dot');
+        for (var j = 0; j < dots.length; j++) {
+            dots[j].classList.remove('active');
+        }
+        if (dots[currentIndex]) dots[currentIndex].classList.add('active');
+    }
+
+    function scrollToCard(index) {
+        if (index < 0) index = 0;
+        if (index >= totalCards) index = totalCards - 1;
+        currentIndex = index;
+        var card = cards[currentIndex];
+        var trackRect = track.getBoundingClientRect();
+        var cardRect = card.getBoundingClientRect();
+        var scrollOffset = cardRect.left - trackRect.left + track.scrollLeft - 5;
+        track.scrollTo({ left: scrollOffset, behavior: 'smooth' });
+        updateDots();
+    }
+
+    prevBtn.addEventListener('click', function() {
+        scrollToCard(currentIndex - 1);
+    });
+    nextBtn.addEventListener('click', function() {
+        scrollToCard(currentIndex + 1);
+    });
+
+    // Update dots on manual scroll
+    var scrollTimeout;
+    track.addEventListener('scroll', function() {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(function() {
+            var trackLeft = track.getBoundingClientRect().left;
+            var closest = 0;
+            var closestDist = Infinity;
+            for (var k = 0; k < cards.length; k++) {
+                var dist = Math.abs(cards[k].getBoundingClientRect().left - trackLeft);
+                if (dist < closestDist) {
+                    closestDist = dist;
+                    closest = k;
+                }
+            }
+            currentIndex = closest;
+            updateDots();
+        }, 100);
+    });
+})();
+</script>
+
 <!-- End of .page_wrapper -->
 </body>
 </html>
+
