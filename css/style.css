@@ -1057,25 +1057,30 @@ span{
 /* Styling for the paragraph and unordered list */
 .text-r p {
   font-size: 14px;
-  font-weight: 400; /* Normal weight for the intro text */
-  color: #fff; /* Soft gray for readability */
-  margin-bottom: 5px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 24px;
 }
 
 .text-r .list-1 {
-  list-style: none; /* Remove default bullets */
-  padding: 15px; /* Remove default padding */
-  margin: 20 px; /* Remove default margin */
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
 }
 
 .text-r .list-1 li {
   position: relative;
   font-size: 16px;
   font-weight: 400;
-  color:#d4d6dc; /* Dark blue for consistency with the theme */
-  margin-bottom: 5px; /* Spacing between list items */
-  padding-left: 20px; /* Space for the checkmark icon */
-  vertical-align: middle; /* Align to the middle of the text */
+  color:#d4d6dc;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.text-r .list-1 li:last-child {
+  margin-bottom: 0;
 }
 
 /* Checkmark styling using \f00c */
