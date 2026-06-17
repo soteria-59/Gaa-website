@@ -85,14 +85,10 @@
 		display: none;
 	}
 	.service-section .service-title{
-		margin-bottom: 60px;
+		margin-bottom: 60%;
 	}
 	.service-section .owl-theme .owl-controls{
-		position: relative;
-		left: 0px;
-		bottom: 0px;
-		text-align: center;
-		top: 15px;
+		display: none !important;
 	}
 	.fact-counter .single-item{
 		margin-bottom: 30px;

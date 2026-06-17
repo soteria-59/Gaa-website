@@ -987,7 +987,7 @@ span{
   background: #f5f5f8;
   width: 100%;
   background-size: cover;
-  padding: 100px 30px 100px 375px;
+  padding: 100px 30px 100px 200px;
 }
 .service-section:before{
   position: absolute;
@@ -1012,12 +1012,12 @@ span{
   position: relative;
   margin-right: -15px;
   z-index: 1;
-  padding-right: 40px;
+  padding-right: 60px;
 }
 .service-section .service-title p{
   color: #d4d6dc;
   position: relative;
-  top: 27px;
+  top: 30px;
 }
 .service-section .three-column-carousel .single-item{
   position: relative;
@@ -1028,9 +1028,7 @@ span{
   display: none !important;
 }
 .service-section .owl-theme .owl-controls {
-  position: absolute;
-  left: -35%;
-  bottom: 26px;
+  display: none !important;
 }
 .service-section .three-column-carousel .single-item .icon-box{
   position: relative;
@@ -1561,13 +1559,10 @@ span{
   padding: 0 20px;
 }
 .main-footer .footer-colmun{
-  padding: 0 15px;
+  padding: 0 20px;
 }
 .main-footer .logo-widget{
-  padding-right: 15px;
-}
-.main-footer .subscribe-widget{
-  padding-left: 15px;
+  padding-right: 0px;
 }
 .main-footer .subscribe-widget .input-box{
   position: relative;

@@ -289,10 +289,9 @@
 		$('.three-column-carousel').owlCarousel({
 			loop:true,
 			margin:30,
-			nav:true,
+			nav:false,
 			smartSpeed: 3000,
 			autoplay: 4000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -318,10 +317,9 @@
 		$('.testimonial-slider').owlCarousel({
 			loop:true,
 			margin:30,
-			nav:true,
+			nav:false,
 			smartSpeed: 3000,
 			autoplay: 4000,
-			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
