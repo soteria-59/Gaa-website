@@ -30,7 +30,7 @@
                     ,
                     arrows: {
                         style:"uranus",
-                        enable:true,
+                        enable:false,
                         hide_onmobile:true,
                         hide_under:778,
                         hide_onleave:false,

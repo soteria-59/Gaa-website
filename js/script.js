@@ -284,7 +284,7 @@
 		});    		
 	}
 
-	//Three Column Carousel Slider
+	//Three Column Carousel Slider (now 2 columns)
 	if ($('.three-column-carousel').length) {
 		$('.three-column-carousel').owlCarousel({
 			loop:true,
@@ -307,7 +307,7 @@
 					items:2
 				},
 				1024:{
-					items:3
+					items:2
 				}
 			}
 		});    		

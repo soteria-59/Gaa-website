@@ -1012,6 +1012,7 @@ span{
   position: relative;
   margin-right: -15px;
   z-index: 1;
+  padding-right: 40px;
 }
 .service-section .service-title p{
   color: #d4d6dc;
@@ -1104,31 +1105,47 @@ span{
 }
 .testimonial-section .img-box{
   position: relative;
-  background: transparent;
-  display: inline-block;
-  margin-right: 20px;
-}
-.testimonial-section .img-box:before{
-  position: absolute;
-  content: "\f10e";
-  background: #f6b129;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  top: -11px;
-  right: -9px;
-  font-family: 'FontAwesome';
-  z-index: 1;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f6b129;
   border-radius: 50%;
-  border: 2px solid #fff;
+  color: #f6b129;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.testimonial-section .img-box img{
+  display: none;
+}
+.testimonial-section .img-box .fa-quote-left{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  line-height: 22px;
+  background: #f6b129;
+  color: #fff;
+  font-size: 11px;
+  border-radius: 50%;
 }
 .testimonial-section .testimonial-content .author-meta{
   position: relative;
   display: inline-block;
-  top: -16px;
+  vertical-align: middle;
+}
+.testimonial-section .testimonial-content .author-meta span{
+  color: #f6b129;
+  font-style: italic;
+  font-size: 15px;
 }
 .testimonial-section .testimonial-content h4{
   margin-bottom: -2px;
@@ -1540,7 +1557,17 @@ span{
 }
 .main-footer .link-widget{
   position: relative;
-  margin-left: -28px;
+  margin-left: 0;
+  padding: 0 20px;
+}
+.main-footer .footer-colmun{
+  padding: 0 15px;
+}
+.main-footer .logo-widget{
+  padding-right: 15px;
+}
+.main-footer .subscribe-widget{
+  padding-left: 15px;
 }
 .main-footer .subscribe-widget .input-box{
   position: relative;
